@@ -19,6 +19,8 @@ function gerarPositionAleatorio(){
 window.addEventListener('load',()=>{
     let btnSim = document.querySelector("#sim")
     btnSim.addEventListener('click',clickSim)
-    
+
+    let btnNao = document.querySelector("#nao")
+    btnNao.addEventListener("mouseenter", clickNao)
 
 })
