@@ -1,0 +1,55 @@
+header{
+    background-color: #101010;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    z-index: 50;
+}
+.burger-line{
+    width: 25px;
+    height: 4px;
+    background-color: aliceblue;
+
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    left: -50%;
+    top: 32px;
+    bottom: 0;
+    background-color: #101010;
+    z-index: 100;
+    transition: 0.5s ease 0.1s;
+}
+
+.menu.active{
+    left:0;
+}
+
+body{
+    margin: 0;
+}
+
+.menu li{
+    text-decoration: none;
+    list-style: none ;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
